@@ -1,0 +1,37 @@
+ <div className="flex min-h-screen flex-col items-center justify-center bg-gray-200">
+      <div className="flex flex-col space-y-4 rounded-2xl bg-white p-10 shadow-2xl">
+        <h1 className="text-3xl font-bold">Kilátók értékelése</h1>
+        <div>
+          <label htmlFor="viewpoint">Kilátó:</label>
+          <select className="select select-primary" id="viewpoint">
+            <option value="0">Válasszon kilátót!</option>
+            <option value="1">Kilátó 1</option>
+            <option value="2">Kilátó 2</option>
+            <option value="3">Kilátó 3</option>
+          </select>
+        </div>
+        <div>
+          <label htmlFor="email">Az Ön e-mail címe:</label>
+          <input className="input input-primary" id="email" type="email" />
+        </div>
+        <div>
+          <label htmlFor="rate">Értékelés: {rating.rating} pont</label>
+          <input className="range range-primary" id="rate" max="10" min="1" type="range" />
+        </div>
+        <div>
+          <label htmlFor="comment">Megjegyzés:</label>
+          <textarea className="textarea textarea-primary" id="comment" rows={3} />
+        </div>
+        <div>
+          <input id="acceptedConditions" type="checkbox" />
+          <label className="ml-2" htmlFor="acceptedConditions">
+            Felhasználási feltételeket elfogadom
+          </label>
+        </div>
+        <div className="mx-auto">
+          <button className="btn btn-primary" type="button">
+            Küldés
+          </button>
+        </div>
+      </div>
+    </div>

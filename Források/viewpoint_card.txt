@@ -1,0 +1,27 @@
+ {/* Kilátok megjelenítése kártyákkal*/}
+      <div className="items-top flex flex-wrap justify-center space-y-10 space-x-10">
+          <div className="w-1/4 rounded-lg border border-sky-600 bg-sky-200 shadow-lg">
+            <div className="rounded-t-lg bg-sky-400 p-2 text-center text-xl font-bold">
+              Avasi kilátó
+            </div>
+            <div className="py-5 pl-10">
+              <ul className="list-disc">
+                <li>Hegy: <b>Avas</b></li>
+                <li>Magasság: <b>72.2 m</b></li>
+                <li>Épült: <b>1963.05.04</b></li>
+              </ul>
+            </div>
+            <div className="bg-sky-400 p-5">
+              <p className="text-justify">Tévétoronyként és kilátóként egyaránt használt építmény. A kilátóteraszról madártávlatból bontakozik ki Miskolc városa és a környező táj. A torony tetején kávézó várja a vendégeket.</p>
+            </div>
+            <div className="flex items-center justify-center p-5">
+              <Image
+                alt="Avas kilátó"
+                className="rounded-lg"
+                height={0}
+                src="https://nits68.github.io/static/viewpoints/avas.jpg"
+                width={150}
+              />
+            </div>
+          </div>
+      </div>
