@@ -16,7 +16,7 @@ export const useGlobalStore = create<GlobalStore>()((set) => ({
   gs: {
     numberOfRecords: 0,
     numberOfPages: 0,
-    actualPage: 0,
+    actualPage: 1,
     searchTerm: "panoráma",
   },
 
